@@ -1,0 +1,40 @@
+table,tr,td{
+    border: solid 1px black ;
+    font-size: 26px;
+    border-spacing: 0px;  
+}
+table{
+    width: 100%;
+}
+
+.firstColSizeBigTable .thirdColSizeBigTable{
+    width: 1%;
+}
+
+.secondColSizeBigTable{
+    width: 98%;
+}
+.rowWithNestedTablefirst{
+    height: 100px; /*todo*/
+}
+
+/*first nested table*/
+
+.firstNestTable{
+width: 100%;
+}
+
+.fistColSizeNestTable{
+    width: 75%;
+}
+.secindColSizeNestTable{
+   width: 25%; 
+}
+
+/*second nested*/
+.secondNestTable{
+    width: 100%;
+}
+.rowWithNestedTableSecond{
+    height: 70px;
+}

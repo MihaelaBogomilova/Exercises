@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>table</title>
+
+    <link rel="stylesheet" href="./demoStyle.css">
+</head>
+<body>
+
+    <table class="bigTable" >
+        <tr>
+            <td class="firstColSizeBigTable">1</td>
+            <td class="secondColSizeBigTable">2</td>
+            <td class="thirdColSizeBigTable">3</td>
+        </tr>
+
+        <tr>
+            <td class="firstColSizeBigTable rowWithNestedTable">4</td>
+            <td class="secondColSizeBigTable rowWithNestedTable">
+                <table class="firstNestTable">
+                    <tr>
+                        <td class="fistColSizeNestTable rowWithNestedTableSecond">
+                            <table class="secondNestTable">
+                                <tr>
+                                    <td class="colSizeSocondNestTable">1</td>
+                                    <td class="colSizeSocondNestTable" rowspan="2">1</td>
+                                    <td class="colSizeSocondNestTable">1</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="colSizeSocondNestTable">1</td>
+                                    <td class="colSizeSocondNestTable">1</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <td class="secindColSizeNestTable rowWithNestedTableSecond">1</td>
+                    </tr>
+            
+                    <tr>
+                        <td class="fistColSizeNestTable ">1</td>
+                        <td class="secindColSizeNestTable">1</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="thirdColSizeBigTable rowWithNestedTablefirst">1</td>
+        </tr>
+
+        <tr>
+            <td class="firstColSizeBigTable">1</td>
+            <td class="secondColSizeBigTable">1</td>
+            <td class="thirdColSizeBigTable">1</td>
+        </tr>
+
+        <tr>
+            <td class="firstColSizeBigTable">1</td>
+            <td class="secondColSizeBigTable">1</td>
+            <td class="thirdColSizeBigTable">1</td>
+        </tr>
+
+    </table>
+
+    <!--
+    <table class="firstNestTable">
+        <tr>
+            <td class="fistColSizeNestTable"></td>
+            <td class="secindColSizeNestTable">1</td>
+        </tr>
+
+        <tr>
+            <td class="fistColSizeNestTable">1</td>
+            <td class="secindColSizeNestTable">1</td>
+        </tr>
+    </table>
+-->
+
+<!--
+<table class="secondNestTable">
+    <tr>
+        <td class="colSizeSocondNestTable">1</td>
+        <td class="colSizeSocondNestTable" rowspan="2">1</td>
+        <td class="colSizeSocondNestTable">1</td>
+    </tr>
+
+    <tr>
+        <td class="colSizeSocondNestTable">1</td>
+        <td class="colSizeSocondNestTable">1</td>
+    </tr>
+</table>
+
+-->
+
+</body>
+</html>
