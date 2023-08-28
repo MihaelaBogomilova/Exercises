@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="seyName">
+        <button onclick="getName()">Send</button>
+        <div id="returnName"></div>
+    </div>
+    
+    <script>
+    function getName(){
+        let name = document.getElementById('seyName').value;
+        let returnName = document.getElementById('returnName');
+        returnName.innerHTML = "Hello" + ' ' + name;
+    }
+</script>
+</body>
+
+
+</html>

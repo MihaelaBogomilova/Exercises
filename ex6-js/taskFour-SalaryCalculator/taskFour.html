@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="brutoInput">
+    <button id="Send" onclick="calculate()">Send</button>
+    <div id="text"></div>
+
+    <Script>
+
+      function calculate(){
+        let brutoInput = document.getElementById('brutoInput').value;
+        let text = document.getElementById('text');
+        let bruto = parseFloat(brutoInput);
+        let deductions = bruto * 0.23;
+        let neto = bruto - deductions;
+
+        text.innerHTML =  "Нетната заплата:" + " " + neto + ", " + "удръжки:" + " " + deductions;
+      }
+    </Script>
+
+</body>
+</html>

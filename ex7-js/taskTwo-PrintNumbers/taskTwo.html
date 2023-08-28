@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body onload="printNum()">
+    
+    <script>
+        function printNum(){
+
+             for (let index = 1; index <= 10; index++) {
+               let p = document.createElement("p");  
+               let node = document.createTextNode(index);
+               console.log(index);
+               p.appendChild(node);
+               document.body.appendChild(p);
+             }
+        }
+    </script>
+</body>
+
+</html>

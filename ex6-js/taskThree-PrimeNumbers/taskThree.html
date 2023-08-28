@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <input id="inputNum" type="number">
+    <button id="send" onclick="check()">Send</button>
+
+
+<script>
+    
+    function check(){
+
+    let num = document.getElementById('inputNum').value;
+    let number = parseInt(num);
+        console.log(number);
+        
+        if( number >= 1 && number <= 10) {
+            if(number == 2 || number == 3 || number == 5 || number == 7){
+                alert("Числото е просто!");
+            }
+            else{
+                alert("Числото е сложно!");
+            }
+        }
+        else{
+            alert("Числото не е в диапазона!");
+        }
+    }
+
+</script>
+
+</body>
+</html>

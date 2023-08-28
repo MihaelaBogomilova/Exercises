@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        .blok{
+            display: block;
+            margin: 5px 0px;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form">
+        <label for="emailInput">Email:</label>
+        <input class="blok" type="text" id="emailInput" required>
+        <p id="errorEmail"></p>
+
+        <label for="passInput">Password:</label>
+        <input class="blok" type="password"  id="passInput" required>
+        <p id="errorPass"></p>
+
+        <button class="blok" id="logIn" onclick="valid()">Log In</button>
+    </form>
+
+    <script>
+        
+        function valid(){
+
+            let emailInput = document.getElementById('emailInput').value;
+            let passInput = document.getElementById('passInput').value;
+            let errorEmail = document.getElementById('errorEmail');
+            let errorPass = document.getElementById('errorPass');
+            errorEmail.innerHTML = "";
+            errorPass.innerHTML = "";
+            let hesError = false;
+
+           let regex  = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if(!regex.test(emailInput)){
+              errorEmail.innerHTML = "Invalid email address!";
+              hesError = true;
+            }
+
+            if(emailInput.length > 20){
+              errorEmail.innerHTML = "Email must be up to 20 characters!";
+              hesError = true;
+            }
+
+            console.log(passInput.length);
+
+            if(passInput.length  < 6) {
+              errorPass.innerHTML = "Password must be more than 6 characters!";
+              hesError = true;
+            }
+
+            if(hesError === false){
+                document.getElementById('form').submit();
+            }
+        
+        };
+
+    </script>
+    
+</body>
+</html>
