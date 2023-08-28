@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(37,37,37);
+    background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(121,9,9,1) 38%, rgba(115,115,115,1) 100%);
+}
+
+/*LOGO*/
+
+.logoContainer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+}
+.logoImg{
+   width: 20%;
+   height: 50px;
+   background-color: rgb(63, 63, 63);
+   display: flex;
+   justify-content: right;
+}
+.logoImgSize{
+    width: 50%;
+    height: 50px;
+}
+.singUp{
+    margin-right: 200px;
+}
+
+/*MENU*/
+
+.menu{
+   width: 30%;
+   height: 50px;
+   background-color: rgb(63, 63, 63);
+   
+}
+.menu ul{
+    font-size: 18px; 
+    margin-left: 50px ;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+li{
+    margin: 10px;
+}
+.logoBtn{
+   width: 50%;
+   height: 50px;
+   background-color: rgb(63, 63, 63);
+   display: flex;
+   justify-content: right;
+}
+
+/*LOGO END*/
+
+/*ABOUT CONTAINER*/
+
+.aboutContainer{
+    width: 100%;
+    height: 600px;
+    background-image: url(./items/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.descriptionAbout{
+    width: 20%;
+    height: 250px;
+    margin-left: 120px;
+    text-align: center;
+    color: white;
+}
+.descriptionAbout p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/*ABOUT CONTAINER END*/
+
+/*THREE BOX CONTAINER*/
+
+.ThreeBoxContainer{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+.box{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.boxThreeContainerImg{
+    width: 100%;
+    height: 85%;
+}
+.box h3{
+    color: white;
+}
+.box p{
+    color: white;
+    font-size: 16px;
+}
+
+/*THREE BOX CONTAINER END*/
+
+/*CONTAINER IMG AND TAXT*/
+.containerImgAndText{
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    text-align: center;
+}
+.boxContainerImgAndText{
+    width: 45%;
+    height: 100%;
+    color: white;
+}
+
+.boxContainerImgAndText img {
+    width: 100%;
+    height: 100%;
+}
+.boxContainerImgAndText h1{
+    margin: 45px 5px 10px 5px;
+    font-weight: bold;
+}
+.boxContainerImgAndText p{
+    margin: 30px;
+    font-size: 20px;
+}
+
+/*CONTAINER IMG AND TAXT END*/
+
+/*BUTTON*/
+button{
+    width: 100px;
+    height: 30px;
+    border: solid 1 rgb(115, 115, 115);
+    margin: auto 10px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+/*BUTTON END*/

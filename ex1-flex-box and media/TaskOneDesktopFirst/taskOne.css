@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    margin: 10px;
+}
+
+@media (max-width: 1024px) {
+    .hiddenBox{
+    display: none;
+}
+}
+
+
+@media (min-width: 1024px) {
+    
+    .mobileBox-65{
+        width: 64%;
+    }
+
+    .mobileBox-30{
+        width: 30%;
+    }
+
+}
